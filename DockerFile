@@ -1,0 +1,12 @@
+# Utilitza la imatge base 7.4-apache
+FROM php:7.4-apache
+
+# Estableix el directori de treball per defecte
+WORKDIR /var/www/html
+
+# Copia el contingut de la carpeta app a /var/www/html de la imatge
+COPY app/ /var/www/html/
+
+# Exposa el port 80 del contenidor
+EXPOSE 80
+
